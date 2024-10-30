@@ -7,6 +7,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/goit-js-hw-09/',  // Добавьте эту строку
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -47,4 +48,3 @@ export default defineConfig(({ command }) => {
     ],
   };
 });
-
